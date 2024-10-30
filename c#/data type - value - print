@@ -1,0 +1,20 @@
+using System;
+namespace DataTypeValuePrint{
+    class Program {
+        public static void Main(){
+            int integer = 54;
+            float decimalValue = 33.34F;// F for float value
+            double bigDecimalValue = 434.6543;
+            char character = 'a';
+            string word = "programming";
+            bool trueOrFalse = true;
+
+            Console.WriteLine("integer: {0}", integer); //variable print method 1 - "{0}", variable 
+            Console.WriteLine($"decimal value: {decimalValue}"); //variable print method 2 - $"{variable}"
+            Console.WriteLine("Big Decimal Value: " + bigDecimalValue); //variable print method 3 - (variable + string + variable)
+            Console.WriteLine("character: " + character);
+            Console.WriteLine("word: {0}", word);
+            Console.WriteLine($"True or false: {trueOrFalse}");
+        }
+    }
+}
