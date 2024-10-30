@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int integer = 54;
+    float decimalValue = 33.34;
+    double bigDecimalValue = 434.6543;
+    char character = 'a';
+    string word = "programming";
+    bool trueOrFalse = true;
+
+    cout << "integer : " << integer << endl;
+    cout << "float decimal value : " << decimalValue << endl;
+    cout << "big float decimal value : " << bigDecimalValue << endl;
+    cout << "character : " << character << endl;
+    cout << "string value : " << word << endl;
+    cout << "True or False : " << trueOrFalse << endl;
+
+
+return 0;
+}
