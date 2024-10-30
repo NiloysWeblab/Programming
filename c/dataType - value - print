@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+int main(){
+    int integer = 54;
+    float decimalValue = 33.34;
+    double bigDecimalValue = 434.6543;
+    char character = 'a';
+    char word[] = "programming";
+    bool trueOrFalse = true; //include <stdbool.h>
+
+    printf("integer: %d\n", integer);
+    printf("float decimal value : %f\n", decimalValue);
+    printf("big float decimal value : %lf\n", bigDecimalValue);
+    printf("character: %c\n", character);
+    printf("string value: %s\n", word);
+    printf("true or False : %d\n", trueOrFalse);
+
+
+
+return 0;
+}
+
