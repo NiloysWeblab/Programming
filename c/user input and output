@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <string.h>
+
+
+int main(){
+
+    //data type - variable - input
+    int number;
+    printf("Type a number: ");
+    scanf("%d", &number);
+
+
+    float fnumber;
+    printf("Type a float number: ");
+    scanf("%f", &fnumber);
+
+
+    double dnumber;
+    printf("Type a big flaot number: ");
+    scanf("%lf", &dnumber);
+
+    char character;
+    printf("Type a character: ");
+    getchar(); // for clearing before space or enter key
+    scanf("%c", &character);
+
+
+    char word[10];
+    printf("Type a word: ");
+    getchar();
+    scanf("%s", word);
+
+    char sentence[40];
+    printf("Type a sentence: ");
+    getchar();
+    scanf("%[^\n]", sentence);// until \n (newline) take input
+
+
+    //output
+    printf("Your given data:\n\n");
+
+    printf("integer number: %d\n", number);
+    printf("floating point number: %f\n", fnumber);
+    printf("big floaing point number: %lf\n", dnumber);
+    printf("character: %c\n", character);
+    printf("A word: %s\n", word);
+    printf("A sentence: %s\n", sentence);
+
+
+    return 0;
+}
