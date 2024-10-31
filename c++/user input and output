@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+    //data type - variable - input
+    int number;
+    cout << "Type a number: ";
+    cin >> number;
+    
+    float fnumber;
+    cout << "Type a float number: ";
+    cin >> fnumber;
+
+    double dnumber;
+    cout << "Type a big flaot number: ";
+    cin >> dnumber;
+
+    char character;
+    cout << "Type a character: ";
+    cin >> character;
+
+    string word;
+    cout << "Type a word: ";
+    cin >> word;
+
+    string sentence;
+    cout << "Type a sentence: ";
+    cin.ignore(); // for previous given space or enter
+    getline(cin, sentence);
+
+    bool trueOrfalse;
+    cout << "Type any non-zero number for true, or 0 for false: ";
+    cin >> trueOrfalse;
+
+
+    //output
+    cout << "Your given data:\n\n";
+
+    cout << "integer number: " << number << endl;
+    cout << "floating point number: " << fnumber << endl;
+    cout << "big floaing point number: " << dnumber << endl;
+    cout << "character: " << character << endl;
+    cout << "A word: " << word << endl;
+    cout << "A sentence: " << sentence << endl;
+    cout << "true or false: " << trueOrfalse << endl;
+
+    return 0;
+}
