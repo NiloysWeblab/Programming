@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+void largestThree(int arr[], int size){
+    int f,s,t;
+    f=s=t=INT16_MIN;
+    if(size==0){
+        cout << "Empty";
+    } else if(size<=3){
+        cout << "Largest distint Three elements: " << arr[0];
+        
+        for(int i=1; i<size; i++){
+            cout << ", " << arr[i];
+        }
+    }
+
+    for(int i=0; i<size; i++){
+        if(arr[i]>f){
+            t=s;
+            s=f;
+            f=arr[i];
+        } else if(arr[i]>s){
+            t=s;
+            s=arr[i];
+        } else if(arr[i]>t){
+            t=arr[i];
+        }
+    }
+
+    cout << "Largest distint Three elements: ";
+    if(f==s && f==t){
+        cout << f;
+    } else if((f==s && s!=t) || (f!=s && s==t)){
+        cout << f << ", " << t;
+    } else if(f!=s && s!=t){
+        cout << f << ", " << s << ", " << t;
+    }
+
+}
+
+int main(){
+
+    int arr[] = {32, 14,60, 7, 21, 45, 11, 5, 27, 3,51, 19, 8, 42, 18, 9, 50, 12, 6, 29, 31, 25, 33, 37, 50, 40, 2, 17, 46, 13, 23, 44, 41, 30, 24, 48, 4, 26, 36, 20, 35, 39, 43, 1, 16, 38, 47, 15, 49, 22, 10, 34, 28};
+    int size = sizeof(arr)/sizeof(arr[0]);
+    largestThree(arr, size);
+    return 0;
+}
